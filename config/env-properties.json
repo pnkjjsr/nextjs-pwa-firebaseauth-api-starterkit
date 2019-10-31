@@ -1,0 +1,15 @@
+{
+  "PROTOCOL": "https",
+  "HOST": "us-central1-nextjs-pwa-firebaseauth-api.cloudfunctions.net",
+  "PORT": "v1",
+  "API_PROTOCOL": "http",
+  "API_HOST": "localhost",
+  "API_PORT": 5000,
+  "API_VERSION": "v1",
+  "REQUEST_TIMEOUT": 10000,
+  "REQUEST_BASEURL": "https://us-central1-nextjs-pwa-firebaseauth-api.cloudfunctions.net",
+  "REQUEST_BASEURL_LOCAL": "http://localhost:5000/nextjs-pwa-firebaseauth-api/us-central1",
+  "MIN_DELAY": 0,
+  "SECRET_KEY": "this.is.your.secret.key",
+  "COOKIE_MAXAGE": 86400000
+}

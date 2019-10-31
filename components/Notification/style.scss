@@ -1,0 +1,18 @@
+div[role="alert"] {
+    position: fixed;
+    z-index: 2;
+    top: -75px;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+
+    &.show {
+        top: 0;
+        opacity: 1;
+    }
+
+    svg[role="button"] {
+        cursor: pointer;
+    }
+}

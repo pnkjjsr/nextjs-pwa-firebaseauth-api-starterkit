@@ -1,0 +1,90 @@
+.nav {
+    position: relative;
+
+    div,
+    .user {
+        color: #fff;
+        text-shadow: 1px 1px 1px #00000040;
+
+        figure,
+        figcaption {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        figure {
+            width: 24px;
+            height: 24px;
+            margin-left: 5px;
+            border-radius: 50px;
+            overflow: hidden;
+        }
+
+        figcaption {
+            display: none;
+            margin-top: 4px;
+            font-size: 12px;
+        }
+
+        &.inside {
+            figure {
+                display: block;
+                width: 50px;
+                height: 50px;
+                margin: auto;
+                margin-bottom: 10px;
+            }
+
+            figcaption {
+                display: block;
+                color: #000;
+                font-weight: bold;
+                text-shadow: none;
+                text-align: center;
+            }
+        }
+    }
+
+    nav {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        margin-right: calc(-100% - 10px);
+        // background-color: rgba(0, 0, 0, 0.6);
+        transition: all .2s ease;
+        transform: scale(1);
+
+
+        ul {
+            float: right;
+            width: 50%;
+            height: 100%;
+            padding: 10px;
+            background-color: #fff;
+            box-shadow: -5px -2px 5px #00000047;
+
+            li {
+                display: block;
+                padding: 10px 0;
+                border-bottom: 1px solid #eee;
+
+                a {
+                    font-size: 13px;
+
+                    &:hover {
+                        color: #38b2ac;
+                    }
+                }
+            }
+        }
+    }
+
+    &.active {
+        nav {
+            margin-right: 0;
+        }
+    }
+}
